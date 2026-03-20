@@ -6,7 +6,7 @@ Folder structure:
 - exploratory_code/: previous or exploratory scripts not used as final implementations.
 - outputs/: generated utility matrices and visualizations.
 
-=========================================================================================
+======================================================================================
 
 *Main final scripts (main_code/):*
 - MonteCarloModified_N8.py: Final Monte Carlo simulator with 8 portfolios and 5 market states construction
