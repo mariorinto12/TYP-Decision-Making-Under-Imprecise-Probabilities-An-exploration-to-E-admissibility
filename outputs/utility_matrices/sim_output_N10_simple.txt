@@ -1,0 +1,133 @@
+Simulation 1:
+--- CLUSTER SIZES ---
+Cluster 0: 1013
+Cluster 1: 1004
+Cluster 2: 1020
+Cluster 3: 982
+Cluster 4: 981
+
+--- CLUSTER PROFILES (center, rounded) ---
+
+Cluster 0
+  numeric: [4 2 4 3 3 3 2 3 3 3]
+  labels : ['mid-high', 'mid-low', 'mid-high', 'mid', 'mid', 'mid', 'mid-low', 'mid', 'mid', 'mid']
+
+Cluster 1
+  numeric: [4 4 3 3 3 3 4 3 3 3]
+  labels : ['mid-high', 'mid-high', 'mid', 'mid', 'mid', 'mid', 'mid-high', 'mid', 'mid', 'mid']
+
+Cluster 2
+  numeric: [2 4 4 3 3 3 3 3 3 3]
+  labels : ['mid-low', 'mid-high', 'mid-high', 'mid', 'mid', 'mid', 'mid', 'mid', 'mid', 'mid']
+
+Cluster 3
+  numeric: [3 4 2 3 3 3 2 3 3 3]
+  labels : ['mid', 'mid-high', 'mid-low', 'mid', 'mid', 'mid', 'mid-low', 'mid', 'mid', 'mid']
+
+Cluster 4
+  numeric: [2 2 2 3 3 3 4 3 3 3]
+  labels : ['mid-low', 'mid-low', 'mid-low', 'mid', 'mid', 'mid', 'mid-high', 'mid', 'mid', 'mid']
+
+=== UTILITY MATRIX (reduced, integer) ===
+Portfolio                 S1      S2      S3      S4      S5
+------------------------------------------------------------
+Balanced                  37      39      20      29      25
+Conservative              20      37      34      35      22
+Aggressive                37      30      42      17      19
+MarketIndex               39      39      36      39      32
+GoldHedge                 33      32      30      30      30
+BondHeavy                 12      12      11      11      13
+EnergyBoost               34      83      54      29      79
+TechTravel                32      30      43      34      38
+DefensiveEquity           49      46      47      44      46
+AntiCrisis                23      25      24      23      22
+
+
+Simulation 2:
+--- CLUSTER SIZES ---
+Cluster 0: 974
+Cluster 1: 991
+Cluster 2: 1013
+Cluster 3: 981
+Cluster 4: 1041
+
+--- CLUSTER PROFILES (center, rounded) ---
+
+Cluster 0
+  numeric: [4 3 2 3 4 2 3 3 3 3]
+  labels : ['mid-high', 'mid', 'mid-low', 'mid', 'mid-high', 'mid-low', 'mid', 'mid', 'mid', 'mid']
+
+Cluster 1
+  numeric: [2 4 3 3 3 3 3 3 3 3]
+  labels : ['mid-low', 'mid-high', 'mid', 'mid', 'mid', 'mid', 'mid', 'mid', 'mid', 'mid']
+
+Cluster 2
+  numeric: [3 2 4 3 2 2 3 3 3 3]
+  labels : ['mid', 'mid-low', 'mid-high', 'mid', 'mid-low', 'mid-low', 'mid', 'mid', 'mid', 'mid']
+
+Cluster 3
+  numeric: [2 2 3 3 4 4 3 3 3 3]
+  labels : ['mid-low', 'mid-low', 'mid', 'mid', 'mid-high', 'mid-high', 'mid', 'mid', 'mid', 'mid']
+
+Cluster 4
+  numeric: [4 3 3 3 2 4 3 4 3 3]
+  labels : ['mid-high', 'mid', 'mid', 'mid', 'mid-low', 'mid-high', 'mid', 'mid-high', 'mid', 'mid']
+
+=== UTILITY MATRIX (reduced, integer) ===
+Portfolio                 S1      S2      S3      S4      S5
+------------------------------------------------------------
+Balanced                  40      21      29      23      39
+Conservative              32      40      22      20      31
+Aggressive                22      29      35      28      31
+MarketIndex               33      42      37      34      39
+GoldHedge                 38      34      24      36      25
+BondHeavy                 10      11       9      14      14
+EnergyBoost               49      62      59      44      59
+TechTravel                32      30      39      27      44
+DefensiveEquity           45      46      48      45      47
+AntiCrisis                23      23      23      24      23
+
+
+Simulation 3:
+--- CLUSTER SIZES ---
+Cluster 0: 965
+Cluster 1: 1066
+Cluster 2: 994
+Cluster 3: 998
+Cluster 4: 977
+
+--- CLUSTER PROFILES (center, rounded) ---
+
+Cluster 0
+  numeric: [2 3 2 2 2 3 3 3 3 3]
+  labels : ['mid-low', 'mid', 'mid-low', 'mid-low', 'mid-low', 'mid', 'mid', 'mid', 'mid', 'mid']
+
+Cluster 1
+  numeric: [4 3 3 2 4 3 3 3 3 3]
+  labels : ['mid-high', 'mid', 'mid', 'mid-low', 'mid-high', 'mid', 'mid', 'mid', 'mid', 'mid']
+
+Cluster 2
+  numeric: [4 3 3 4 2 3 3 3 3 3]
+  labels : ['mid-high', 'mid', 'mid', 'mid-high', 'mid-low', 'mid', 'mid', 'mid', 'mid', 'mid']
+
+Cluster 3
+  numeric: [3 3 2 4 4 3 3 3 3 3]
+  labels : ['mid', 'mid', 'mid-low', 'mid-high', 'mid-high', 'mid', 'mid', 'mid', 'mid', 'mid']
+
+Cluster 4
+  numeric: [2 3 4 3 3 3 3 3 3 3]
+  labels : ['mid-low', 'mid', 'mid-high', 'mid', 'mid', 'mid', 'mid', 'mid', 'mid', 'mid']
+
+=== UTILITY MATRIX (reduced, integer) ===
+Portfolio                 S1      S2      S3      S4      S5
+------------------------------------------------------------
+Balanced                  23      37      41      29      21
+Conservative              32      28      28      30      31
+Aggressive                18      31      32      21      44
+MarketIndex               26      24      42      53      39
+GoldHedge                 24      41      23      39      29
+BondHeavy                 13      12      11      12      11
+EnergyBoost               62      55      56      61      45
+TechTravel                34      32      34      40      35
+DefensiveEquity           48      46      48      43      50
+AntiCrisis                24      23      23      23      25

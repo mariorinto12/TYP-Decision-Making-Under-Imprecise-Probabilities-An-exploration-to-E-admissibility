@@ -1,0 +1,1309 @@
+=== MONTE CARLO SIMULATION I ===
+
+Balanced
+--------
+Summary:
+  Mean Final Value: 30918.82
+  Median Final Value: 28700.34
+  Best Case: 128074.03
+  Worst Case: 7288.22
+  5th Percentile: 14818.12
+  95th Percentile: 54268.25
+Probability of Loss: 0.5 %
+First 10 simulated values:
+[12473.55, 27989.01, 52107.9, 22240.44, 22092.35, 33464.43, 56235.46, 39014.62, 41925.73, 33751.39]
+
+Conservative
+------------
+Summary:
+  Mean Final Value: 29818.64
+  Median Final Value: 27409.33
+  Best Case: 134491.95
+  Worst Case: 5585.75
+  5th Percentile: 13754.71
+  95th Percentile: 54026.67
+Probability of Loss: 1.0 %
+First 10 simulated values:
+[24288.25, 17518.87, 21816.03, 35009.07, 28507.99, 16225.59, 26450.88, 20165.21, 32405.73, 19614.07]
+
+Aggressive
+----------
+Summary:
+  Mean Final Value: 29208.58
+  Median Final Value: 25215.05
+  Best Case: 185120.2
+  Worst Case: 2782.23
+  5th Percentile: 9630.79
+  95th Percentile: 61670.35
+Probability of Loss: 5.64 %
+First 10 simulated values:
+[22260.62, 22884.41, 14322.9, 13979.43, 56860.72, 58109.18, 21401.84, 21422.77, 96749.07, 12532.74]
+
+MarketIndex
+-----------
+Summary:
+  Mean Final Value: 38012.08
+  Median Final Value: 33870.8
+  Best Case: 199273.0
+  Worst Case: 5218.44
+  5th Percentile: 14475.12
+  95th Percentile: 76873.43
+Probability of Loss: 0.86 %
+First 10 simulated values:
+[45977.42, 11549.82, 33204.49, 79582.6, 42330.48, 38175.63, 41431.33, 62260.72, 18012.25, 41541.56]
+
+GoldHedge
+---------
+Summary:
+  Mean Final Value: 31867.3
+  Median Final Value: 30225.45
+  Best Case: 98477.05
+  Worst Case: 7540.68
+  5th Percentile: 16493.21
+  95th Percentile: 53276.91
+Probability of Loss: 0.1 %
+First 10 simulated values:
+[37831.02, 18436.12, 27520.95, 17707.78, 32734.85, 30913.65, 68289.87, 15473.1, 34620.27, 43379.93]
+
+BondHeavy
+---------
+Summary:
+  Mean Final Value: 12210.9
+  Median Final Value: 11785.24
+  Best Case: 30169.13
+  Worst Case: 4181.49
+  5th Percentile: 7610.99
+  95th Percentile: 18257.17
+Probability of Loss: 26.68 %
+First 10 simulated values:
+[9965.94, 14896.79, 14777.95, 14307.06, 12862.5, 11940.86, 15393.16, 11566.79, 18630.81, 7596.46]
+
+TechTravel
+----------
+Summary:
+  Mean Final Value: 34559.83
+  Median Final Value: 27170.27
+  Best Case: 288677.28
+  Worst Case: 1996.52
+  5th Percentile: 8282.44
+  95th Percentile: 83979.05
+Probability of Loss: 8.08 %
+First 10 simulated values:
+[43078.06, 56695.77, 18183.37, 19032.22, 59190.25, 12682.89, 32199.93, 50052.83, 17515.62, 68957.8]
+
+AntiCrisis
+----------
+Summary:
+  Mean Final Value: 23971.66
+  Median Final Value: 22815.78
+  Best Case: 84670.67
+  Worst Case: 8179.35
+  5th Percentile: 13777.57
+  95th Percentile: 37958.75
+Probability of Loss: 0.36 %
+First 10 simulated values:
+[25599.83, 30815.54, 14810.16, 41774.22, 20115.55, 20901.59, 36711.3, 20155.94, 24197.51, 22082.72]
+
+--- PORTFOLIO QUINTILES ---
+Balanced            : [20338.19589986 26037.82648368 31756.02138301 40215.39815005]
+Conservative        : [19482.47014455 24824.52175563 30363.73109642 38697.68581719]
+Aggressive          : [15533.93887303 21894.05907728 29219.22843273 40468.90202983]
+MarketIndex         : [21989.58629421 29777.19072981 38403.09418079 50940.24785554]
+GoldHedge           : [22129.49078285 27415.25920464 32992.44250268 40431.32755847]
+BondHeavy           : [ 9426.58770188 11029.31803153 12573.21395143 14741.61503364]
+TechTravel          : [15392.04908001 22623.72365764 32843.55404315 49477.68562703]
+AntiCrisis          : [17716.15719128 21027.0485746  24726.39745767 29573.50814137]
+
+--- SAMPLE OUTPUT (first 5 simulations) ---
+
+Balanced
+  Value = 12473.55 -> State = low
+  Value = 27989.01 -> State = mid
+  Value = 52107.90 -> State = high
+  Value = 22240.44 -> State = mid-low
+  Value = 22092.35 -> State = mid-low
+
+Conservative
+  Value = 24288.25 -> State = mid-low
+  Value = 17518.87 -> State = low
+  Value = 21816.03 -> State = mid-low
+  Value = 35009.07 -> State = mid-high
+  Value = 28507.99 -> State = mid
+
+Aggressive
+  Value = 22260.62 -> State = mid
+  Value = 22884.41 -> State = mid
+  Value = 14322.90 -> State = low
+  Value = 13979.43 -> State = low
+  Value = 56860.72 -> State = high
+
+MarketIndex
+  Value = 45977.42 -> State = mid-high
+  Value = 11549.82 -> State = low
+  Value = 33204.49 -> State = mid
+  Value = 79582.60 -> State = high
+  Value = 42330.48 -> State = mid-high
+
+GoldHedge
+  Value = 37831.02 -> State = mid-high
+  Value = 18436.12 -> State = low
+  Value = 27520.95 -> State = mid
+  Value = 17707.78 -> State = low
+  Value = 32734.85 -> State = mid
+
+BondHeavy
+  Value = 9965.94 -> State = mid-low
+  Value = 14896.79 -> State = high
+  Value = 14777.95 -> State = high
+  Value = 14307.06 -> State = mid-high
+  Value = 12862.50 -> State = mid-high
+
+TechTravel
+  Value = 43078.06 -> State = mid-high
+  Value = 56695.77 -> State = high
+  Value = 18183.37 -> State = mid-low
+  Value = 19032.22 -> State = mid-low
+  Value = 59190.25 -> State = high
+
+AntiCrisis
+  Value = 25599.83 -> State = mid-high
+  Value = 30815.54 -> State = high
+  Value = 14810.16 -> State = low
+  Value = 41774.22 -> State = high
+  Value = 20115.55 -> State = mid-low
+
+--- MATRIX X INFO ---
+Shape of X (simulations x portfolios): (5000, 8)
+
+--- FIRST 5 ROWS OF X (numeric) ---
+[1 2 3 4 4 2 4 4]
+[3 1 3 1 1 5 5 5]
+[5 2 1 3 3 5 2 1]
+[2 4 1 5 1 4 2 5]
+[2 3 5 4 3 4 5 2]
+
+--- FIRST 5 ROWS OF X (labels) ---
+['low' 'mid-low' 'mid' 'mid-high' 'mid-high' 'mid-low' 'mid-high'
+ 'mid-high']
+['mid' 'low' 'mid' 'low' 'low' 'high' 'high' 'high']
+['high' 'mid-low' 'low' 'mid' 'mid' 'high' 'mid-low' 'low']
+['mid-low' 'mid-high' 'low' 'high' 'low' 'mid-high' 'mid-low' 'high']
+['mid-low' 'mid' 'high' 'mid-high' 'mid' 'mid-high' 'high' 'mid-low']
+
+--- CLUSTER SIZES ---
+Cluster 0: 1004
+Cluster 1: 1001
+Cluster 2: 943
+Cluster 3: 1062
+Cluster 4: 990
+
+--- CLUSTER PROFILES (center, rounded) ---
+
+Cluster 0
+  numeric: [4 2 3 3 3 2 2 3]
+  labels : ['mid-high', 'mid-low', 'mid', 'mid', 'mid', 'mid-low', 'mid-low', 'mid']
+
+Cluster 1
+  numeric: [2 4 3 3 3 2 3 3]
+  labels : ['mid-low', 'mid-high', 'mid', 'mid', 'mid', 'mid-low', 'mid', 'mid']
+
+Cluster 2
+  numeric: [2 2 3 3 3 3 4 3]
+  labels : ['mid-low', 'mid-low', 'mid', 'mid', 'mid', 'mid', 'mid-high', 'mid']
+
+Cluster 3
+  numeric: [3 3 3 3 3 4 2 3]
+  labels : ['mid', 'mid', 'mid', 'mid', 'mid', 'mid-high', 'mid-low', 'mid']
+
+Cluster 4
+  numeric: [4 4 3 3 3 4 4 3]
+  labels : ['mid-high', 'mid-high', 'mid', 'mid', 'mid', 'mid-high', 'mid-high', 'mid']
+
+=== UTILITY MATRIX (mean final value) ===
+Portfolio                     S1          S2          S3          S4          S5
+--------------------------------------------------------------------------------
+Balanced                38424.03    25079.33    21886.66    27181.73    41824.09
+Conservative            21847.83    38747.19    21417.19    32101.71    34427.88
+Aggressive              32535.15    25495.19    30068.55    31226.34    26606.00
+MarketIndex             39316.77    35999.13    38970.34    35923.73    40051.73
+GoldHedge               33852.65    28677.40    34079.78    33041.26    29712.46
+BondHeavy               10056.99     9564.63    12575.06    15009.05    13722.40
+TechTravel              23383.84    33860.75    52235.01    16811.07    48804.22
+AntiCrisis              25271.86    23011.95    24852.20    22699.72    24149.17
+
+=== UTILITY MATRIX (reduced, integer) ===
+Portfolio                 S1      S2      S3      S4      S5
+------------------------------------------------------------
+Balanced                  38      25      21      27      41
+Conservative              21      38      21      32      34
+Aggressive                32      25      30      31      26
+MarketIndex               39      35      38      35      40
+GoldHedge                 33      28      34      33      29
+BondHeavy                 10       9      12      15      13
+TechTravel                23      33      52      16      48
+AntiCrisis                25      23      24      22      24
+
+=== f(θ) DEFINITIONS PER CLUSTER (8 features) ===
+Cluster      f1_mean    f2_ge4   f3_sign   f4_u_mean    f5_med    f6_le2    f7_std    f8_u_rng
+----------------------------------------------------------------------------------------------
+0             2.7500    0.1250   -0.2500     27.6250    3.0000    0.3750    0.6614     29.0000
+1             2.8750    0.1250   -0.1250     27.0000    3.0000    0.2500    0.5995     29.0000
+2             2.8750    0.1250   -0.1250     29.0000    3.0000    0.2500    0.5995     40.0000
+3             3.0000    0.1250    0.0000     26.3750    3.0000    0.1250    0.5000     20.0000
+4             3.5000    0.5000    0.5000     31.8750    3.5000    0.0000    0.5000     35.0000
+
+--- CLUSTER -> THETA MAPPING ---
+Cluster 0  ==  θ1
+Cluster 1  ==  θ2
+Cluster 2  ==  θ3
+Cluster 3  ==  θ4
+Cluster 4  ==  θ5
+
+=================
+
+=== MONTE CARLO SIMULATION II ===
+
+Balanced
+--------
+Summary:
+  Mean Final Value: 30203.5
+  Median Final Value: 28006.33
+  Best Case: 108925.63
+  Worst Case: 6325.11
+  5th Percentile: 14249.98
+  95th Percentile: 54146.44
+Probability of Loss: 0.82 %
+First 10 simulated values:
+[20731.88, 48933.4, 40683.5, 15425.91, 34927.78, 28505.55, 18011.3, 59618.7, 12468.68, 47657.54]
+
+Conservative
+------------
+Summary:
+  Mean Final Value: 29491.58
+  Median Final Value: 27089.33
+  Best Case: 131025.29
+  Worst Case: 4991.56
+  5th Percentile: 13708.84
+  95th Percentile: 53321.53
+Probability of Loss: 0.82 %
+First 10 simulated values:
+[50553.41, 23742.45, 31246.26, 35235.76, 33779.72, 16401.37, 21795.01, 21949.55, 87900.98, 27679.61]
+
+Aggressive
+----------
+Summary:
+  Mean Final Value: 29151.18
+  Median Final Value: 25451.84
+  Best Case: 166614.03
+  Worst Case: 3351.41
+  5th Percentile: 9749.0
+  95th Percentile: 60846.41
+Probability of Loss: 5.36 %
+First 10 simulated values:
+[33359.94, 21829.68, 21993.31, 7890.5, 20107.16, 43661.28, 16393.97, 15224.46, 11902.61, 26602.83]
+
+MarketIndex
+-----------
+Summary:
+  Mean Final Value: 37373.15
+  Median Final Value: 33495.14
+  Best Case: 188310.39
+  Worst Case: 4059.3
+  5th Percentile: 14239.41
+  95th Percentile: 72369.54
+Probability of Loss: 0.94 %
+First 10 simulated values:
+[44976.96, 49190.04, 29352.33, 62778.7, 20869.31, 29101.99, 55245.67, 93477.92, 26926.69, 43066.72]
+
+GoldHedge
+---------
+Summary:
+  Mean Final Value: 31740.72
+  Median Final Value: 29878.69
+  Best Case: 115991.52
+  Worst Case: 8222.11
+  5th Percentile: 16458.08
+  95th Percentile: 52809.96
+Probability of Loss: 0.16 %
+First 10 simulated values:
+[41052.42, 26181.04, 31649.56, 15445.64, 27158.88, 24033.73, 53154.57, 39129.35, 25857.85, 17323.39]
+
+BondHeavy
+---------
+Summary:
+  Mean Final Value: 12169.24
+  Median Final Value: 11766.56
+  Best Case: 29054.42
+  Worst Case: 4360.51
+  5th Percentile: 7536.89
+  95th Percentile: 18128.83
+Probability of Loss: 27.28 %
+First 10 simulated values:
+[11561.84, 13614.43, 9115.69, 12777.16, 6781.31, 9515.02, 18895.1, 8400.27, 8215.98, 9653.08]
+
+TechTravel
+----------
+Summary:
+  Mean Final Value: 35057.39
+  Median Final Value: 28020.32
+  Best Case: 336090.31
+  Worst Case: 1842.05
+  5th Percentile: 7991.34
+  95th Percentile: 85286.18
+Probability of Loss: 8.78 %
+First 10 simulated values:
+[239455.32, 11820.65, 31160.13, 21028.5, 25304.71, 19181.36, 34675.43, 30035.83, 63346.11, 43733.48]
+
+AntiCrisis
+----------
+Summary:
+  Mean Final Value: 23930.0
+  Median Final Value: 22970.36
+  Best Case: 62612.77
+  Worst Case: 7694.54
+  5th Percentile: 13729.52
+  95th Percentile: 37755.09
+Probability of Loss: 0.52 %
+First 10 simulated values:
+[23872.68, 25256.22, 21460.94, 22753.3, 16558.96, 18200.86, 35012.03, 16570.25, 17093.69, 21480.25]
+
+--- PORTFOLIO QUINTILES ---
+Balanced            : [19782.45501494 25266.57461117 30877.01223315 39357.71752666]
+Conservative        : [19347.11781898 24565.06073473 30133.85472426 37804.74501907]
+Aggressive          : [16040.71946611 22257.00282029 29075.06687668 40182.05093325]
+MarketIndex         : [22062.12925791 29404.0840273  38185.46587424 50619.88620726]
+GoldHedge           : [22085.39829759 27266.61697257 32768.28995676 40302.29993548]
+BondHeavy           : [ 9360.36008304 10959.10766955 12606.26219614 14741.21431561]
+TechTravel          : [14996.8201321  23221.05380731 33633.7816331  49780.86243597]
+AntiCrisis          : [17510.76781277 21225.07870075 24799.3582815  29694.11292345]
+
+--- SAMPLE OUTPUT (first 5 simulations) ---
+
+Balanced
+  Value = 20731.88 -> State = mid-low
+  Value = 48933.40 -> State = high
+  Value = 40683.50 -> State = high
+  Value = 15425.91 -> State = low
+  Value = 34927.78 -> State = mid-high
+
+Conservative
+  Value = 50553.41 -> State = high
+  Value = 23742.45 -> State = mid-low
+  Value = 31246.26 -> State = mid-high
+  Value = 35235.76 -> State = mid-high
+  Value = 33779.72 -> State = mid-high
+
+Aggressive
+  Value = 33359.94 -> State = mid-high
+  Value = 21829.68 -> State = mid-low
+  Value = 21993.31 -> State = mid-low
+  Value = 7890.50 -> State = low
+  Value = 20107.16 -> State = mid-low
+
+MarketIndex
+  Value = 44976.96 -> State = mid-high
+  Value = 49190.04 -> State = mid-high
+  Value = 29352.33 -> State = mid-low
+  Value = 62778.70 -> State = high
+  Value = 20869.31 -> State = low
+
+GoldHedge
+  Value = 41052.42 -> State = high
+  Value = 26181.04 -> State = mid-low
+  Value = 31649.56 -> State = mid
+  Value = 15445.64 -> State = low
+  Value = 27158.88 -> State = mid-low
+
+BondHeavy
+  Value = 11561.84 -> State = mid
+  Value = 13614.43 -> State = mid-high
+  Value = 9115.69 -> State = low
+  Value = 12777.16 -> State = mid-high
+  Value = 6781.31 -> State = low
+
+TechTravel
+  Value = 239455.32 -> State = high
+  Value = 11820.65 -> State = low
+  Value = 31160.13 -> State = mid
+  Value = 21028.50 -> State = mid-low
+  Value = 25304.71 -> State = mid
+
+AntiCrisis
+  Value = 23872.68 -> State = mid
+  Value = 25256.22 -> State = mid-high
+  Value = 21460.94 -> State = mid
+  Value = 22753.30 -> State = mid
+  Value = 16558.96 -> State = low
+
+--- MATRIX X INFO ---
+Shape of X (simulations x portfolios): (5000, 8)
+
+--- FIRST 5 ROWS OF X (numeric) ---
+[2 5 4 4 5 3 5 3]
+[5 2 2 4 2 4 1 4]
+[5 4 2 2 3 1 3 3]
+[1 4 1 5 1 4 2 3]
+[4 4 2 1 2 1 3 1]
+
+--- FIRST 5 ROWS OF X (labels) ---
+['mid-low' 'high' 'mid-high' 'mid-high' 'high' 'mid' 'high' 'mid']
+['high' 'mid-low' 'mid-low' 'mid-high' 'mid-low' 'mid-high' 'low'
+ 'mid-high']
+['high' 'mid-high' 'mid-low' 'mid-low' 'mid' 'low' 'mid' 'mid']
+['low' 'mid-high' 'low' 'high' 'low' 'mid-high' 'mid-low' 'mid']
+['mid-high' 'mid-high' 'mid-low' 'low' 'mid-low' 'low' 'mid' 'low']
+
+--- CLUSTER SIZES ---
+Cluster 0: 956
+Cluster 1: 1040
+Cluster 2: 989
+Cluster 3: 1026
+Cluster 4: 989
+
+--- CLUSTER PROFILES (center, rounded) ---
+
+Cluster 0
+  numeric: [2 3 2 3 3 4 3 3]
+  labels : ['mid-low', 'mid', 'mid-low', 'mid', 'mid', 'mid-high', 'mid', 'mid']
+
+Cluster 1
+  numeric: [3 3 4 2 3 2 3 3]
+  labels : ['mid', 'mid', 'mid-high', 'mid-low', 'mid', 'mid-low', 'mid', 'mid']
+
+Cluster 2
+  numeric: [4 3 3 3 3 4 3 3]
+  labels : ['mid-high', 'mid', 'mid', 'mid', 'mid', 'mid-high', 'mid', 'mid']
+
+Cluster 3
+  numeric: [3 3 4 4 3 3 3 3]
+  labels : ['mid', 'mid', 'mid-high', 'mid-high', 'mid', 'mid', 'mid', 'mid']
+
+Cluster 4
+  numeric: [3 3 2 4 3 2 3 3]
+  labels : ['mid', 'mid', 'mid-low', 'mid-high', 'mid', 'mid-low', 'mid', 'mid']
+
+=== UTILITY MATRIX (mean final value) ===
+Portfolio                     S1          S2          S3          S4          S5
+--------------------------------------------------------------------------------
+Balanced                19874.43    28243.10    41482.60    27992.89    33263.64
+Conservative            26517.50    30302.99    31990.95    28772.34    29759.96
+Aggressive              20249.80    38394.90    25261.23    42774.41    17792.21
+MarketIndex             34051.58    22622.84    32356.32    52460.67    45459.70
+GoldHedge               31954.43    32034.56    31423.97    33607.24    29605.54
+BondHeavy               14269.80    10005.76    14916.04    12403.60     9423.89
+TechTravel              36598.49    37084.51    35469.63    32391.20    33789.77
+AntiCrisis              25209.12    23206.76    24908.80    22458.38    24001.99
+
+=== UTILITY MATRIX (reduced, integer) ===
+Portfolio                 S1      S2      S3      S4      S5
+------------------------------------------------------------
+Balanced                  19      28      41      27      33
+Conservative              26      30      31      28      29
+Aggressive                20      38      25      42      17
+MarketIndex               34      22      32      52      45
+GoldHedge                 31      32      31      33      29
+BondHeavy                 14      10      14      12       9
+TechTravel                36      37      35      32      33
+AntiCrisis                25      23      24      22      24
+
+=== f(θ) DEFINITIONS PER CLUSTER (8 features) ===
+Cluster      f1_mean    f2_ge4   f3_sign   f4_u_mean    f5_med    f6_le2    f7_std    f8_u_rng
+----------------------------------------------------------------------------------------------
+0             2.8750    0.1250   -0.1250     25.6250    3.0000    0.2500    0.5995     22.0000
+1             2.8750    0.1250   -0.1250     27.5000    3.0000    0.2500    0.5995     28.0000
+2             3.2500    0.2500    0.2500     29.1250    3.0000    0.0000    0.4330     27.0000
+3             3.2500    0.2500    0.2500     31.0000    3.0000    0.0000    0.4330     40.0000
+4             2.8750    0.1250   -0.1250     27.3750    3.0000    0.2500    0.5995     36.0000
+
+--- CLUSTER -> THETA MAPPING ---
+Cluster 0  ==  θ1
+Cluster 1  ==  θ2
+Cluster 2  ==  θ3
+Cluster 3  ==  θ4
+Cluster 4  ==  θ5
+
+=================
+
+=== MONTE CARLO SIMULATION III ===
+
+Balanced
+--------
+Summary:
+  Mean Final Value: 30674.43
+  Median Final Value: 28483.72
+  Best Case: 104601.45
+  Worst Case: 6395.96
+  5th Percentile: 14931.53
+  95th Percentile: 53936.0
+Probability of Loss: 0.74 %
+First 10 simulated values:
+[44077.64, 72713.23, 29892.0, 34432.29, 43935.87, 63028.07, 66341.93, 26349.18, 46844.69, 48129.25]
+
+Conservative
+------------
+Summary:
+  Mean Final Value: 29482.71
+  Median Final Value: 27141.65
+  Best Case: 118500.87
+  Worst Case: 4466.34
+  5th Percentile: 13793.67
+  95th Percentile: 52404.15
+Probability of Loss: 1.02 %
+First 10 simulated values:
+[21821.74, 29902.43, 49193.1, 47295.43, 52083.88, 18593.04, 16706.45, 53576.85, 24803.24, 51919.83]
+
+Aggressive
+----------
+Summary:
+  Mean Final Value: 29395.22
+  Median Final Value: 25523.63
+  Best Case: 154754.7
+  Worst Case: 2975.32
+  5th Percentile: 10242.52
+  95th Percentile: 61427.65
+Probability of Loss: 4.56 %
+First 10 simulated values:
+[48390.03, 39208.52, 22185.46, 17215.97, 28383.4, 19411.94, 25922.82, 36934.93, 15524.49, 42754.88]
+
+MarketIndex
+-----------
+Summary:
+  Mean Final Value: 37154.21
+  Median Final Value: 33062.82
+  Best Case: 192195.98
+  Worst Case: 4281.77
+  5th Percentile: 14588.28
+  95th Percentile: 73850.5
+Probability of Loss: 0.92 %
+First 10 simulated values:
+[22367.24, 33867.92, 76202.09, 47047.12, 51085.54, 10764.24, 56967.44, 38687.88, 25099.87, 12605.54]
+
+GoldHedge
+---------
+Summary:
+  Mean Final Value: 31491.86
+  Median Final Value: 29912.79
+  Best Case: 131139.43
+  Worst Case: 8485.97
+  5th Percentile: 16596.81
+  95th Percentile: 53030.65
+Probability of Loss: 0.08 %
+First 10 simulated values:
+[24819.67, 36370.15, 22137.89, 19685.36, 39826.49, 25326.54, 21292.19, 39603.32, 22614.48, 36708.19]
+
+BondHeavy
+---------
+Summary:
+  Mean Final Value: 12143.39
+  Median Final Value: 11797.56
+  Best Case: 30781.73
+  Worst Case: 4217.65
+  5th Percentile: 7406.92
+  95th Percentile: 17939.31
+Probability of Loss: 27.32 %
+First 10 simulated values:
+[8647.89, 5730.48, 8341.17, 14845.79, 9062.49, 9229.53, 20959.16, 15515.12, 13307.39, 8555.45]
+
+TechTravel
+----------
+Summary:
+  Mean Final Value: 35075.2
+  Median Final Value: 27923.34
+  Best Case: 277567.49
+  Worst Case: 1343.99
+  5th Percentile: 8470.32
+  95th Percentile: 87276.79
+Probability of Loss: 8.12 %
+First 10 simulated values:
+[24409.18, 27972.88, 20905.86, 20557.44, 44194.69, 43262.6, 9445.13, 21223.61, 8955.56, 39939.03]
+
+AntiCrisis
+----------
+Summary:
+  Mean Final Value: 23905.94
+  Median Final Value: 22881.26
+  Best Case: 69965.87
+  Worst Case: 6269.44
+  5th Percentile: 13735.07
+  95th Percentile: 37462.1
+Probability of Loss: 0.32 %
+First 10 simulated values:
+[20946.75, 25156.71, 20244.07, 16355.04, 34285.26, 26072.05, 22865.76, 23367.84, 12867.11, 26283.64]
+
+--- PORTFOLIO QUINTILES ---
+Balanced            : [20371.48156256 25962.41592445 31374.17636331 39847.07181927]
+Conservative        : [19033.74234403 24595.20018112 30074.49112112 38395.6688001 ]
+Aggressive          : [16053.03179653 22093.04904148 29427.76224059 40238.0149816 ]
+MarketIndex         : [21401.69028491 29010.50276775 37580.61429843 49973.74905426]
+GoldHedge           : [22236.82755465 27247.82754115 32498.07510279 39446.36238904]
+BondHeavy           : [ 9325.65738578 11002.16226447 12651.64985003 14818.98323703]
+TechTravel          : [15232.59955597 23341.07373755 32901.57697658 49723.73620132]
+AntiCrisis          : [17549.26311523 21202.70529081 24733.6635983  29509.18087892]
+
+--- SAMPLE OUTPUT (first 5 simulations) ---
+
+Balanced
+  Value = 44077.64 -> State = high
+  Value = 72713.23 -> State = high
+  Value = 29892.00 -> State = mid
+  Value = 34432.29 -> State = mid-high
+  Value = 43935.87 -> State = high
+
+Conservative
+  Value = 21821.74 -> State = mid-low
+  Value = 29902.43 -> State = mid
+  Value = 49193.10 -> State = high
+  Value = 47295.43 -> State = high
+  Value = 52083.88 -> State = high
+
+Aggressive
+  Value = 48390.03 -> State = high
+  Value = 39208.52 -> State = mid-high
+  Value = 22185.46 -> State = mid
+  Value = 17215.97 -> State = mid-low
+  Value = 28383.40 -> State = mid
+
+MarketIndex
+  Value = 22367.24 -> State = mid-low
+  Value = 33867.92 -> State = mid
+  Value = 76202.09 -> State = high
+  Value = 47047.12 -> State = mid-high
+  Value = 51085.54 -> State = high
+
+GoldHedge
+  Value = 24819.67 -> State = mid-low
+  Value = 36370.15 -> State = mid-high
+  Value = 22137.89 -> State = low
+  Value = 19685.36 -> State = low
+  Value = 39826.49 -> State = high
+
+BondHeavy
+  Value = 8647.89 -> State = low
+  Value = 5730.48 -> State = low
+  Value = 8341.17 -> State = low
+  Value = 14845.79 -> State = high
+  Value = 9062.49 -> State = low
+
+TechTravel
+  Value = 24409.18 -> State = mid
+  Value = 27972.88 -> State = mid
+  Value = 20905.86 -> State = mid-low
+  Value = 20557.44 -> State = mid-low
+  Value = 44194.69 -> State = mid-high
+
+AntiCrisis
+  Value = 20946.75 -> State = mid-low
+  Value = 25156.71 -> State = mid-high
+  Value = 20244.07 -> State = mid-low
+  Value = 16355.04 -> State = low
+  Value = 34285.26 -> State = high
+
+--- MATRIX X INFO ---
+Shape of X (simulations x portfolios): (5000, 8)
+
+--- FIRST 5 ROWS OF X (numeric) ---
+[5 2 5 2 2 1 3 2]
+[5 3 4 3 4 1 3 4]
+[3 5 3 5 1 1 2 2]
+[4 5 2 4 1 5 2 1]
+[5 5 3 5 5 1 4 5]
+
+--- FIRST 5 ROWS OF X (labels) ---
+['high' 'mid-low' 'high' 'mid-low' 'mid-low' 'low' 'mid' 'mid-low']
+['high' 'mid' 'mid-high' 'mid' 'mid-high' 'low' 'mid' 'mid-high']
+['mid' 'high' 'mid' 'high' 'low' 'low' 'mid-low' 'mid-low']
+['mid-high' 'high' 'mid-low' 'mid-high' 'low' 'high' 'mid-low' 'low']
+['high' 'high' 'mid' 'high' 'high' 'low' 'mid-high' 'high']
+
+--- CLUSTER SIZES ---
+Cluster 0: 997
+Cluster 1: 1015
+Cluster 2: 968
+Cluster 3: 1083
+Cluster 4: 937
+
+--- CLUSTER PROFILES (center, rounded) ---
+
+Cluster 0
+  numeric: [4 2 3 4 3 3 3 3]
+  labels : ['mid-high', 'mid-low', 'mid', 'mid-high', 'mid', 'mid', 'mid', 'mid']
+
+Cluster 1
+  numeric: [3 4 3 4 3 3 3 4]
+  labels : ['mid', 'mid-high', 'mid', 'mid-high', 'mid', 'mid', 'mid', 'mid-high']
+
+Cluster 2
+  numeric: [2 2 3 2 3 3 3 4]
+  labels : ['mid-low', 'mid-low', 'mid', 'mid-low', 'mid', 'mid', 'mid', 'mid-high']
+
+Cluster 3
+  numeric: [2 3 3 3 3 3 3 2]
+  labels : ['mid-low', 'mid', 'mid', 'mid', 'mid', 'mid', 'mid', 'mid-low']
+
+Cluster 4
+  numeric: [4 4 3 2 3 3 3 2]
+  labels : ['mid-high', 'mid-high', 'mid', 'mid-low', 'mid', 'mid', 'mid', 'mid-low']
+
+=== UTILITY MATRIX (mean final value) ===
+Portfolio                     S1          S2          S3          S4          S5
+--------------------------------------------------------------------------------
+Balanced                39606.08    30734.30    23862.21    20866.66    39479.55
+Conservative            19246.40    38641.17    25100.71    28466.78    36154.88
+Aggressive              28081.47    33374.02    27937.72    26879.54    30896.44
+MarketIndex             43587.19    52560.80    24098.23    39643.16    24231.35
+GoldHedge               29790.12    31617.77    31746.25    30247.36    34341.78
+BondHeavy               11335.57    12387.18    12393.42    12550.67    12009.80
+TechTravel              39711.44    32230.04    35020.95    30557.95    38501.26
+AntiCrisis              23196.43    28387.17    29612.90    17904.28    20847.67
+
+=== UTILITY MATRIX (reduced, integer) ===
+Portfolio                 S1      S2      S3      S4      S5
+------------------------------------------------------------
+Balanced                  39      30      23      20      39
+Conservative              19      38      25      28      36
+Aggressive                28      33      27      26      30
+MarketIndex               43      52      24      39      24
+GoldHedge                 29      31      31      30      34
+BondHeavy                 11      12      12      12      12
+TechTravel                39      32      35      30      38
+AntiCrisis                23      28      29      17      20
+
+=== f(θ) DEFINITIONS PER CLUSTER (8 features) ===
+Cluster      f1_mean    f2_ge4   f3_sign   f4_u_mean    f5_med    f6_le2    f7_std    f8_u_rng
+----------------------------------------------------------------------------------------------
+0             3.1250    0.2500    0.1250     28.8750    3.0000    0.1250    0.5995     32.0000
+1             3.3750    0.3750    0.3750     32.0000    3.0000    0.0000    0.4841     40.0000
+2             2.7500    0.1250   -0.2500     25.7500    3.0000    0.3750    0.6614     23.0000
+3             2.7500    0.0000   -0.2500     25.2500    3.0000    0.2500    0.4330     27.0000
+4             3.0000    0.2500    0.0000     29.1250    3.0000    0.2500    0.7071     27.0000
+
+--- CLUSTER -> THETA MAPPING ---
+Cluster 0  ==  θ1
+Cluster 1  ==  θ2
+Cluster 2  ==  θ3
+Cluster 3  ==  θ4
+Cluster 4  ==  θ5
+
+=================
+
+=== MONTE CARLO SIMULATION IV ===
+
+Balanced
+--------
+Summary:
+  Mean Final Value: 30920.76
+  Median Final Value: 28782.35
+  Best Case: 117348.96
+  Worst Case: 6399.98
+  5th Percentile: 14775.15
+  95th Percentile: 54097.29
+Probability of Loss: 0.5 %
+First 10 simulated values:
+[27177.08, 15585.56, 15055.11, 54397.35, 48953.35, 21463.55, 32224.94, 35077.04, 21564.45, 55126.66]
+
+Conservative
+------------
+Summary:
+  Mean Final Value: 29714.95
+  Median Final Value: 27557.1
+  Best Case: 135385.99
+  Worst Case: 5671.18
+  5th Percentile: 13469.87
+  95th Percentile: 53771.93
+Probability of Loss: 0.96 %
+First 10 simulated values:
+[44586.58, 45320.41, 29863.41, 31660.55, 16648.57, 48467.56, 19088.4, 15757.28, 22295.18, 37202.08]
+
+Aggressive
+----------
+Summary:
+  Mean Final Value: 29585.73
+  Median Final Value: 25820.1
+  Best Case: 182375.65
+  Worst Case: 3414.0
+  5th Percentile: 9942.66
+  95th Percentile: 62943.33
+Probability of Loss: 5.12 %
+First 10 simulated values:
+[7248.27, 42236.23, 25281.52, 12900.29, 12343.17, 64102.09, 28436.07, 31241.73, 22212.47, 24507.35]
+
+MarketIndex
+-----------
+Summary:
+  Mean Final Value: 37515.15
+  Median Final Value: 33257.06
+  Best Case: 153526.64
+  Worst Case: 5504.57
+  5th Percentile: 14809.93
+  95th Percentile: 75016.06
+Probability of Loss: 0.84 %
+First 10 simulated values:
+[43991.01, 23586.11, 38449.36, 24021.46, 49470.19, 21851.45, 42010.91, 32249.96, 47627.74, 37965.28]
+
+GoldHedge
+---------
+Summary:
+  Mean Final Value: 32074.2
+  Median Final Value: 30240.08
+  Best Case: 95194.6
+  Worst Case: 6960.23
+  5th Percentile: 16977.4
+  95th Percentile: 53485.29
+Probability of Loss: 0.08 %
+First 10 simulated values:
+[39419.15, 22964.49, 50148.04, 21956.33, 18087.27, 24057.81, 19301.3, 36526.76, 27527.86, 24479.14]
+
+BondHeavy
+---------
+Summary:
+  Mean Final Value: 12128.93
+  Median Final Value: 11716.06
+  Best Case: 31118.53
+  Worst Case: 3952.76
+  5th Percentile: 7492.58
+  95th Percentile: 18310.89
+Probability of Loss: 27.52 %
+First 10 simulated values:
+[10338.5, 14665.63, 10403.39, 10370.49, 10719.37, 11198.97, 12217.7, 9726.32, 7475.91, 13194.96]
+
+TechTravel
+----------
+Summary:
+  Mean Final Value: 35094.47
+  Median Final Value: 27579.18
+  Best Case: 321414.28
+  Worst Case: 1493.16
+  5th Percentile: 8319.46
+  95th Percentile: 85473.39
+Probability of Loss: 8.1 %
+First 10 simulated values:
+[6500.0, 11687.51, 48750.69, 42071.25, 16400.87, 54904.8, 42941.78, 36439.85, 53590.35, 16110.73]
+
+AntiCrisis
+----------
+Summary:
+  Mean Final Value: 23914.39
+  Median Final Value: 22798.61
+  Best Case: 66707.83
+  Worst Case: 7490.26
+  5th Percentile: 13400.25
+  95th Percentile: 38553.18
+Probability of Loss: 0.52 %
+First 10 simulated values:
+[30449.11, 41062.51, 31530.05, 39431.62, 20615.8, 17270.64, 11423.38, 36086.8, 14558.33, 26238.35]
+
+--- PORTFOLIO QUINTILES ---
+Balanced            : [20399.73119089 26033.90229834 31829.72940667 39981.81195825]
+Conservative        : [19375.42922091 24573.62860755 30435.22252741 38544.46304541]
+Aggressive          : [15957.50151447 22417.72628464 29673.38981083 40680.27549549]
+MarketIndex         : [21660.08723569 29527.76516027 37983.94217263 50035.56110731]
+GoldHedge           : [22339.00047514 27499.5922583  33004.45792935 40665.94942913]
+BondHeavy           : [ 9335.26577049 10951.38818474 12508.55555757 14619.44811318]
+TechTravel          : [14944.19102794 23121.74188001 33077.55971797 49610.57729258]
+AntiCrisis          : [17439.87518008 21077.56372439 24688.35645519 29880.5377086 ]
+
+--- SAMPLE OUTPUT (first 5 simulations) ---
+
+Balanced
+  Value = 27177.08 -> State = mid
+  Value = 15585.56 -> State = low
+  Value = 15055.11 -> State = low
+  Value = 54397.35 -> State = high
+  Value = 48953.35 -> State = high
+
+Conservative
+  Value = 44586.58 -> State = high
+  Value = 45320.41 -> State = high
+  Value = 29863.41 -> State = mid
+  Value = 31660.55 -> State = mid-high
+  Value = 16648.57 -> State = low
+
+Aggressive
+  Value = 7248.27 -> State = low
+  Value = 42236.23 -> State = high
+  Value = 25281.52 -> State = mid
+  Value = 12900.29 -> State = low
+  Value = 12343.17 -> State = low
+
+MarketIndex
+  Value = 43991.01 -> State = mid-high
+  Value = 23586.11 -> State = mid-low
+  Value = 38449.36 -> State = mid-high
+  Value = 24021.46 -> State = mid-low
+  Value = 49470.19 -> State = mid-high
+
+GoldHedge
+  Value = 39419.15 -> State = mid-high
+  Value = 22964.49 -> State = mid-low
+  Value = 50148.04 -> State = high
+  Value = 21956.33 -> State = low
+  Value = 18087.27 -> State = low
+
+BondHeavy
+  Value = 10338.50 -> State = mid-low
+  Value = 14665.63 -> State = high
+  Value = 10403.39 -> State = mid-low
+  Value = 10370.49 -> State = mid-low
+  Value = 10719.37 -> State = mid-low
+
+TechTravel
+  Value = 6500.00 -> State = low
+  Value = 11687.51 -> State = low
+  Value = 48750.69 -> State = mid-high
+  Value = 42071.25 -> State = mid-high
+  Value = 16400.87 -> State = mid-low
+
+AntiCrisis
+  Value = 30449.11 -> State = high
+  Value = 41062.51 -> State = high
+  Value = 31530.05 -> State = high
+  Value = 39431.62 -> State = high
+  Value = 20615.80 -> State = mid-low
+
+--- MATRIX X INFO ---
+Shape of X (simulations x portfolios): (5000, 8)
+
+--- FIRST 5 ROWS OF X (numeric) ---
+[3 5 1 4 4 2 1 5]
+[1 5 5 2 2 5 1 5]
+[1 3 3 4 5 2 4 5]
+[5 4 1 2 1 2 4 5]
+[5 1 1 4 1 2 2 2]
+
+--- FIRST 5 ROWS OF X (labels) ---
+['mid' 'high' 'low' 'mid-high' 'mid-high' 'mid-low' 'low' 'high']
+['low' 'high' 'high' 'mid-low' 'mid-low' 'high' 'low' 'high']
+['low' 'mid' 'mid' 'mid-high' 'high' 'mid-low' 'mid-high' 'high']
+['high' 'mid-high' 'low' 'mid-low' 'low' 'mid-low' 'mid-high' 'high']
+['high' 'low' 'low' 'mid-high' 'low' 'mid-low' 'mid-low' 'mid-low']
+
+--- CLUSTER SIZES ---
+Cluster 0: 981
+Cluster 1: 941
+Cluster 2: 1044
+Cluster 3: 975
+Cluster 4: 1059
+
+--- CLUSTER PROFILES (center, rounded) ---
+
+Cluster 0
+  numeric: [3 4 2 3 3 3 4 4]
+  labels : ['mid', 'mid-high', 'mid-low', 'mid', 'mid', 'mid', 'mid-high', 'mid-high']
+
+Cluster 1
+  numeric: [3 4 3 3 4 2 2 3]
+  labels : ['mid', 'mid-high', 'mid', 'mid', 'mid-high', 'mid-low', 'mid-low', 'mid']
+
+Cluster 2
+  numeric: [3 2 3 3 3 4 2 4]
+  labels : ['mid', 'mid-low', 'mid', 'mid', 'mid', 'mid-high', 'mid-low', 'mid-high']
+
+Cluster 3
+  numeric: [3 4 3 3 2 4 2 2]
+  labels : ['mid', 'mid-high', 'mid', 'mid', 'mid-low', 'mid-high', 'mid-low', 'mid-low']
+
+Cluster 4
+  numeric: [3 2 3 3 3 2 4 2]
+  labels : ['mid', 'mid-low', 'mid', 'mid', 'mid', 'mid-low', 'mid-high', 'mid-low']
+
+=== UTILITY MATRIX (mean final value) ===
+Portfolio                     S1          S2          S3          S4          S5
+--------------------------------------------------------------------------------
+Balanced                29989.61    29368.06    30109.86    33622.09    31475.36
+Conservative            37764.29    33606.40    20265.44    35986.59    22342.14
+Aggressive              24199.96    30351.96    32848.64    28919.69    31290.50
+MarketIndex             40146.72    37092.07    36582.46    37416.47    36463.68
+GoldHedge               34957.51    36219.09    30980.94    26697.43    31748.29
+BondHeavy               12693.94     9367.72    13826.87    14040.57    10625.16
+TechTravel              54072.25    17012.24    25472.27    25289.36    52095.15
+AntiCrisis              28498.06    24704.96    29294.98    18190.67    18931.19
+
+=== UTILITY MATRIX (reduced, integer) ===
+Portfolio                 S1      S2      S3      S4      S5
+------------------------------------------------------------
+Balanced                  29      29      30      33      31
+Conservative              37      33      20      35      22
+Aggressive                24      30      32      28      31
+MarketIndex               40      37      36      37      36
+GoldHedge                 34      36      30      26      31
+BondHeavy                 12       9      13      14      10
+TechTravel                54      17      25      25      52
+AntiCrisis                28      24      29      18      18
+
+=== f(θ) DEFINITIONS PER CLUSTER (8 features) ===
+Cluster      f1_mean    f2_ge4   f3_sign   f4_u_mean    f5_med    f6_le2    f7_std    f8_u_rng
+----------------------------------------------------------------------------------------------
+0             3.2500    0.3750    0.2500     32.2500    3.0000    0.1250    0.6614     42.0000
+1             3.0000    0.2500    0.0000     26.8750    3.0000    0.2500    0.7071     28.0000
+2             3.0000    0.2500    0.0000     26.8750    3.0000    0.2500    0.7071     23.0000
+3             2.8750    0.2500   -0.1250     27.0000    3.0000    0.3750    0.7806     23.0000
+4             2.7500    0.1250   -0.2500     28.8750    3.0000    0.3750    0.6614     42.0000
+
+--- CLUSTER -> THETA MAPPING ---
+Cluster 0  ==  θ1
+Cluster 1  ==  θ2
+Cluster 2  ==  θ3
+Cluster 3  ==  θ4
+Cluster 4  ==  θ5
+
+=================
+
+=== MONTE CARLO SIMULATION V ===
+
+Balanced
+--------
+Summary:
+  Mean Final Value: 30674.49
+  Median Final Value: 28324.33
+  Best Case: 101065.58
+  Worst Case: 4864.65
+  5th Percentile: 14511.01
+  95th Percentile: 54450.22
+Probability of Loss: 0.64 %
+First 10 simulated values:
+[9552.67, 23884.22, 21449.78, 15294.81, 58287.65, 20613.29, 13090.54, 50753.42, 33321.06, 22762.33]
+
+Conservative
+------------
+Summary:
+  Mean Final Value: 29918.67
+  Median Final Value: 27619.51
+  Best Case: 121814.66
+  Worst Case: 6178.39
+  5th Percentile: 13727.75
+  95th Percentile: 53871.36
+Probability of Loss: 0.78 %
+First 10 simulated values:
+[11626.0, 23303.83, 38763.2, 24361.88, 21051.0, 20284.55, 36502.71, 28342.98, 37689.07, 18555.45]
+
+Aggressive
+----------
+Summary:
+  Mean Final Value: 29166.73
+  Median Final Value: 25334.19
+  Best Case: 174099.45
+  Worst Case: 2214.96
+  5th Percentile: 10135.62
+  95th Percentile: 61369.66
+Probability of Loss: 4.72 %
+First 10 simulated values:
+[26998.55, 35138.16, 47553.55, 42856.62, 16105.42, 114669.64, 31848.42, 30683.36, 31465.69, 13947.79]
+
+MarketIndex
+-----------
+Summary:
+  Mean Final Value: 37640.89
+  Median Final Value: 33382.55
+  Best Case: 279264.92
+  Worst Case: 2260.73
+  5th Percentile: 14742.97
+  95th Percentile: 74835.16
+Probability of Loss: 0.94 %
+First 10 simulated values:
+[27974.51, 68939.6, 22242.33, 19254.81, 27526.37, 16732.91, 19457.0, 21668.42, 38806.75, 22457.52]
+
+GoldHedge
+---------
+Summary:
+  Mean Final Value: 31631.89
+  Median Final Value: 29751.9
+  Best Case: 107132.77
+  Worst Case: 7947.26
+  5th Percentile: 16527.4
+  95th Percentile: 52611.69
+Probability of Loss: 0.24 %
+First 10 simulated values:
+[22742.43, 20588.7, 27648.79, 32032.68, 29152.73, 44630.94, 37981.5, 24241.34, 40111.08, 27944.76]
+
+BondHeavy
+---------
+Summary:
+  Mean Final Value: 12226.66
+  Median Final Value: 11739.77
+  Best Case: 28371.09
+  Worst Case: 4117.24
+  5th Percentile: 7595.22
+  95th Percentile: 18556.91
+Probability of Loss: 26.7 %
+First 10 simulated values:
+[12613.92, 8830.72, 9472.67, 10687.14, 9708.82, 10628.49, 7779.29, 13452.43, 12041.29, 14942.04]
+
+TechTravel
+----------
+Summary:
+  Mean Final Value: 34546.61
+  Median Final Value: 27633.13
+  Best Case: 366463.28
+  Worst Case: 2143.73
+  5th Percentile: 8256.23
+  95th Percentile: 83532.84
+Probability of Loss: 8.12 %
+First 10 simulated values:
+[31447.37, 8738.31, 29963.75, 43717.42, 22493.19, 61807.23, 17452.78, 24039.17, 27216.98, 25571.98]
+
+AntiCrisis
+----------
+Summary:
+  Mean Final Value: 23842.35
+  Median Final Value: 22780.03
+  Best Case: 67634.88
+  Worst Case: 6192.57
+  5th Percentile: 13433.33
+  95th Percentile: 37680.82
+Probability of Loss: 0.48 %
+First 10 simulated values:
+[18038.21, 23664.27, 23515.1, 16333.86, 16220.65, 13069.53, 15503.13, 19019.68, 23430.37, 38692.2]
+
+--- PORTFOLIO QUINTILES ---
+Balanced            : [20255.5641682  25649.49053129 31352.10739007 39857.32265855]
+Conservative        : [19458.04146891 24837.06349435 30516.89153877 38921.96451597]
+Aggressive          : [15717.08116651 22228.76332658 29031.6182528  40036.09932283]
+MarketIndex         : [21757.0173737  29408.64257328 37980.45095896 50755.93406614]
+GoldHedge           : [22108.47153951 27183.94650817 32552.96158946 39953.01128648]
+BondHeavy           : [ 9383.81822057 10977.6415739  12557.50866572 14887.52302145]
+TechTravel          : [14938.32211942 22760.87274721 33216.62102433 49408.6898504 ]
+AntiCrisis          : [17569.92365548 21154.77390898 24507.75307358 29687.05733204]
+
+--- SAMPLE OUTPUT (first 5 simulations) ---
+
+Balanced
+  Value = 9552.67 -> State = low
+  Value = 23884.22 -> State = mid-low
+  Value = 21449.78 -> State = mid-low
+  Value = 15294.81 -> State = low
+  Value = 58287.65 -> State = high
+
+Conservative
+  Value = 11626.00 -> State = low
+  Value = 23303.83 -> State = mid-low
+  Value = 38763.20 -> State = mid-high
+  Value = 24361.88 -> State = mid-low
+  Value = 21051.00 -> State = mid-low
+
+Aggressive
+  Value = 26998.55 -> State = mid
+  Value = 35138.16 -> State = mid-high
+  Value = 47553.55 -> State = high
+  Value = 42856.62 -> State = high
+  Value = 16105.42 -> State = mid-low
+
+MarketIndex
+  Value = 27974.51 -> State = mid-low
+  Value = 68939.60 -> State = high
+  Value = 22242.33 -> State = mid-low
+  Value = 19254.81 -> State = low
+  Value = 27526.37 -> State = mid-low
+
+GoldHedge
+  Value = 22742.43 -> State = mid-low
+  Value = 20588.70 -> State = low
+  Value = 27648.79 -> State = mid
+  Value = 32032.68 -> State = mid
+  Value = 29152.73 -> State = mid
+
+BondHeavy
+  Value = 12613.92 -> State = mid-high
+  Value = 8830.72 -> State = low
+  Value = 9472.67 -> State = mid-low
+  Value = 10687.14 -> State = mid-low
+  Value = 9708.82 -> State = mid-low
+
+TechTravel
+  Value = 31447.37 -> State = mid
+  Value = 8738.31 -> State = low
+  Value = 29963.75 -> State = mid
+  Value = 43717.42 -> State = mid-high
+  Value = 22493.19 -> State = mid-low
+
+AntiCrisis
+  Value = 18038.21 -> State = mid-low
+  Value = 23664.27 -> State = mid
+  Value = 23515.10 -> State = mid
+  Value = 16333.86 -> State = low
+  Value = 16220.65 -> State = low
+
+--- MATRIX X INFO ---
+Shape of X (simulations x portfolios): (5000, 8)
+
+--- FIRST 5 ROWS OF X (numeric) ---
+[1 1 3 2 2 4 3 2]
+[2 2 4 5 1 1 1 3]
+[2 4 5 2 3 2 3 3]
+[1 2 5 1 3 2 4 1]
+[5 2 2 2 3 2 2 1]
+
+--- FIRST 5 ROWS OF X (labels) ---
+['low' 'low' 'mid' 'mid-low' 'mid-low' 'mid-high' 'mid' 'mid-low']
+['mid-low' 'mid-low' 'mid-high' 'high' 'low' 'low' 'low' 'mid']
+['mid-low' 'mid-high' 'high' 'mid-low' 'mid' 'mid-low' 'mid' 'mid']
+['low' 'mid-low' 'high' 'low' 'mid' 'mid-low' 'mid-high' 'low']
+['high' 'mid-low' 'mid-low' 'mid-low' 'mid' 'mid-low' 'mid-low' 'low']
+
+--- CLUSTER SIZES ---
+Cluster 0: 975
+Cluster 1: 958
+Cluster 2: 1004
+Cluster 3: 1009
+Cluster 4: 1054
+
+--- CLUSTER PROFILES (center, rounded) ---
+
+Cluster 0
+  numeric: [4 4 2 3 3 3 2 3]
+  labels : ['mid-high', 'mid-high', 'mid-low', 'mid', 'mid', 'mid', 'mid-low', 'mid']
+
+Cluster 1
+  numeric: [2 4 4 3 3 2 4 3]
+  labels : ['mid-low', 'mid-high', 'mid-high', 'mid', 'mid', 'mid-low', 'mid-high', 'mid']
+
+Cluster 2
+  numeric: [2 3 3 3 3 3 2 3]
+  labels : ['mid-low', 'mid', 'mid', 'mid', 'mid', 'mid', 'mid-low', 'mid']
+
+Cluster 3
+  numeric: [4 2 4 3 3 3 3 3]
+  labels : ['mid-high', 'mid-low', 'mid-high', 'mid', 'mid', 'mid', 'mid', 'mid']
+
+Cluster 4
+  numeric: [3 2 2 3 3 3 4 3]
+  labels : ['mid', 'mid-low', 'mid-low', 'mid', 'mid', 'mid', 'mid-high', 'mid']
+
+=== UTILITY MATRIX (mean final value) ===
+Portfolio                     S1          S2          S3          S4          S5
+--------------------------------------------------------------------------------
+Balanced                40320.01    25381.05    20685.15    39666.62    27470.48
+Conservative            38423.03    37674.82    31288.50    22193.86    21092.19
+Aggressive              20028.47    37217.88    31113.40    41159.49    16967.15
+MarketIndex             39060.17    35030.75    39173.08    39986.36    34995.56
+GoldHedge               33068.37    31628.99    30578.55    31627.07    31313.71
+BondHeavy               11597.96    10987.21    13181.44    13041.29    12245.46
+TechTravel              23267.74    54558.31    16955.58    32511.55    45495.80
+AntiCrisis              23880.71    21721.57    24105.98    23980.48    25351.12
+
+=== UTILITY MATRIX (reduced, integer) ===
+Portfolio                 S1      S2      S3      S4      S5
+------------------------------------------------------------
+Balanced                  40      25      20      39      27
+Conservative              38      37      31      22      21
+Aggressive                20      37      31      41      16
+MarketIndex               39      35      39      39      34
+GoldHedge                 33      31      30      31      31
+BondHeavy                 11      10      13      13      12
+TechTravel                23      54      16      32      45
+AntiCrisis                23      21      24      23      25
+
+=== f(θ) DEFINITIONS PER CLUSTER (8 features) ===
+Cluster      f1_mean    f2_ge4   f3_sign   f4_u_mean    f5_med    f6_le2    f7_std    f8_u_rng
+----------------------------------------------------------------------------------------------
+0             3.0000    0.2500    0.0000     28.3750    3.0000    0.2500    0.7071     29.0000
+1             3.1250    0.3750    0.1250     31.2500    3.0000    0.2500    0.7806     44.0000
+2             2.7500    0.0000   -0.2500     25.5000    3.0000    0.2500    0.4330     26.0000
+3             3.1250    0.2500    0.1250     30.0000    3.0000    0.1250    0.5995     28.0000
+4             2.8750    0.1250   -0.1250     26.3750    3.0000    0.2500    0.5995     33.0000
+
+--- CLUSTER -> THETA MAPPING ---
+Cluster 0  ==  θ1
+Cluster 1  ==  θ2
+Cluster 2  ==  θ3
+Cluster 3  ==  θ4
+Cluster 4  ==  θ5
